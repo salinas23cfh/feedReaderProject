@@ -104,7 +104,7 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('completes work', function() {
+        it('works complete', function() {
             const feed = document.querySelector('.feed');
             expect(feed.children.length > 0).toBe(true);
 
@@ -112,12 +112,36 @@ $(function() {
 
 
 });
+   
     /* TODO: Write a new test suite named "New Feed Selection" */
-
-        /* TODO: Write a test that ensures when a new feed is loaded
+    describe('New Feed Selection', function() {
+        const feed = document.querySelector('.feed');
+        const firstFeed = [];
+         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        beforeEach(function(done) {
+            loadFeed(0, function() {
+                Array.from(feed.children).forEach(function(entry) {
+                firstFeed.push(entry.innerText);
+            });
+            loadFeed(1, done);
+            });
+            
+        });
+
+        it('changes content', function() {
+            Array.from(feed.children).forEach(function(entry, index) {
+                expect(entry.innerText === firstFeed[index]).toBe(false);
+            });
+        });
+
+
+       
+
+    });
+
 
 });
 
