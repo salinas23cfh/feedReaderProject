@@ -101,7 +101,7 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('works complete', function() {            
+        it('works completed', function() {            
             expect($('.feed .entry').length > 0).toBe(true);
 
         });
@@ -111,33 +111,28 @@ $(function() {
    
     /* A new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-        const feed = document.querySelector('.feed');
-        const firstFeed = [];
-         /*Test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+        var lastFeed;
+        /*Test that ensures when a new feed is loaded
+        * by the loadFeed function that the content actually changes.
+        * Remember, loadFeed() is asynchronous.
+        */
+        
         beforeEach(function(done) {
             loadFeed(0, function() {
-                Array.from(feed.children).forEach(function(entry) {
-                firstFeed.push(entry.innerText);
+              //stores last feed
+              lastFeed = $('.feed').html();
+              //grabs new feed
+              loadFeed(1, done);
             });
-            loadFeed(1, done);
-            });
-            
+                        
         });
-
-        it('changes content', function() {
-            Array.from(feed.children).forEach(function(entry, index) {
-                expect(entry.innerText === firstFeed[index]).toBe(false);
+        
+        it('not the same as the old feed', function() {
+            expect($('.feed').html()).not.toBe(lastFeed);
             });
-        });
-
-
-       
+      
 
     });
-
 
 });
 
