@@ -1,4 +1,8 @@
-# Project Overview
+# Feed Reader Project
+
+
+
+## Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
@@ -47,11 +51,41 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 20. When complete - all of your tests should pass. 
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 
-##Resources:
+## Resources:
 
 Udacity starter code
 Fend Resources Blog walk through
 
-##Ackownledgments
+## Ackownledgments
 Thank you to the Udacity Staff and students for the help along the way with this project.
+
+## Installation
+
+- Clone file to local computer 
+- Open feedReaderProject
+- Open index.html file 
+- Test begin to run
+
+## Changelog
+
+- adding README file
+- working on New Feed Selection
+- working on Initial Entries test
+- working on menu tests
+- working on Jasmine test
+- adding starter code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
