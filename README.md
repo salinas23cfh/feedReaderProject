@@ -68,7 +68,7 @@ Thank you to the Udacity Staff and students for the help along the way with this
 
 ## Changelog
 
-- updating README fiel
+- updating README file
 - Working on New Feed Selection updates
 - updating README file
 - adding README file
