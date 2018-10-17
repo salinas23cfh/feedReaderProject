@@ -64,10 +64,13 @@ Thank you to the Udacity Staff and students for the help along the way with this
 - Clone file to local computer 
 - Open feedReaderProject
 - Open index.html file 
-- Test begin to run
+- Test begins to run
 
 ## Changelog
 
+- updating README fiel
+- Working on New Feed Selection updates
+- updating README file
 - adding README file
 - working on New Feed Selection
 - working on Initial Entries test
